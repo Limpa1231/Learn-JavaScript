@@ -1,30 +1,20 @@
 
-// let User = {
-    // firstName: "oleg",
-    // lastName: "lebovski",
-    // age: 25,
-    // group: "sleeps",
-    // speciality: "Datasience"
-// };
+const numberOfFilms =prompt("Сколько фильмов уже посмотрели?",'');
 
-// console.log (User);
-// 
-//  const result = confirm('Are you here?');
-//  console.log(result);
-// 
-//  const answer = prompt("Любишь радугу:?","yes")
-//  console.log(answer);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-//  let answers = [];
-// 
-//  answers[0] = prompt (" Как вас зовут?",'');
-//  answers[1] = prompt (" Сколько вам лет?",'');
-//  answers[2] = prompt ("Ваш пол ",'М/Ж');
-// 
-//  document.write(answers);
-//  console.log(typeof(answers));
+const a = prompt("Один из последних просмотренных фильмов?",''),
+      b = prompt("На сколько оцените его?",''),
+      c = prompt("Один из последних просмотренных фильмов?",''), 
+      d = prompt("На сколько оцените его?",'');
 
-const user = 'Ivan';
+personalMovieDB.movies[a] = b; 
+personalMovieDB.movies[c] = d; 
 
-alert(`Привет, ${user}`);
-console.log ( "10" === 10);
+console.log(personalMovieDB);
