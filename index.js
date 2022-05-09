@@ -46,21 +46,33 @@
     // }   
 // }
 
-const discount = 0.8;
-const ToyBear = 1500;
+// const discount = 0.8;
+// const ToyBear = 1500;
 
-function price(count, amount){
-    return count*amount;
-}
+// function price(count, amount){
+//     return count*amount;
+// }
 
-function fixPrice(cost){
-     console.log(cost*discount);
-}
+// function fixPrice(cost){
+//      console.log(cost*discount);
+// }
 
-const res = price(5,ToyBear);
+// const res = price(5,ToyBear);
 
-console.log(fixPrice(res));
+// console.log(fixPrice(res));
 
-const lest = (a,b) => a*b;
+// const lest = (a,b) => a*b;
 
-console.log(lest (4, 5));
+// console.log(lest (4, 5));
+
+const options = {
+    name: 'swift',
+    widht: 1024,
+    height: 1024,
+    colors: {
+        border: 'yellow',
+        background: 'red'
+    }
+};
+
+console.log(options[name]);
