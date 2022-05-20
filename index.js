@@ -65,14 +65,91 @@
 
 // console.log(lest (4, 5));
 
-const options = {
-    name: 'swift',
-    widht: 1024,
-    height: 1024,
-    colors: {
-        border: 'yellow',
-        background: 'red'
-    }
-};
 
-console.log(options[name]);
+//Объекты
+// const options = {
+    // name: 'swift',
+    // widht: 1024,
+    // height: 1024,
+    // colors: {
+        // border: 'yellow',
+        // background: 'red'
+    // },
+    // makeTest: function() {
+        // console.log('Welcome to the site!')
+    // } 
+// };
+// 
+// const {border, background} = options.colors;
+// 
+// console.log(border,background);
+// 
+// options.makeTest();
+// console.log(Object.keys(options).length);
+// 
+// let counter = 0;
+// 
+// for (let key in options){
+    // if(typeof(options[key]) === 'object'){
+        // for (let i in options[key]) {
+            // console.log(`Свойство ${i} имеет значение ${options[key][i]}`)}
+            // counter++;
+        // } else{
+            // console.log(`Свойство ${key} имеет значение ${options[key]}` )
+            // counter++;
+        // }
+    // };
+// 
+// console.log(options.name);
+// console.log(counter);
+
+
+//Массивы и псевдомассивы
+// const arr = [ 1, 4, 6, 8 ,3, 2];
+// 
+// arr.sort(compareNum);
+// console.log(arr);
+// 
+// function compareNum(a, b){
+    // return a - b; 
+// 
+// }
+
+// arr.pop();
+// arr.push(14);
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++){
+    // console.log(arr[i]);
+// }
+
+// arr.forEach(function(item,i, arr){
+    // console.log(`индекс элемента: ${i} соответвует элементу: ${item} внутри массива ${arr}`)
+// })
+// 
+// arr.reverse();
+// 
+// console.log(arr);
+// for (let value of arr){
+    // console.log(value);
+// }
+// const str = prompt("Введите продукты",'');
+// const products = str.split(", ");
+// products.sort();
+// console.log(products.join("; "));
+
+function createCounter () {
+    let counter = 0;
+
+    const myFunction = function() {
+        counter = counter +1 ;
+        return counter;
+    }
+
+    return myFunction;
+}
+
+const increment = createCounter();
+const c1 = increment;
+const c2 = increment;
+const c3 = increment;
